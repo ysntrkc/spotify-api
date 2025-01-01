@@ -1,2 +1,1 @@
-# spotify-api
-A repository for Spotify authentication system using FastAPI
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
