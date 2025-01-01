@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Auth System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Spotify Auth System</h1>
     <form id="auth-form">
@@ -13,12 +15,23 @@
     </form>
     <section id="top-tracks">
         <h2>Top 10 Most Listened Songs</h2>
+        <div class="time-range-buttons">
+            <button type="button" onclick="fetchTopTracks('short_term')">Last Week</button>
+            <button type="button" onclick="fetchTopTracks('medium_term')">Last Month</button>
+            <button type="button" onclick="fetchTopTracks('long_term')">Last Year</button>
+        </div>
         <ul id="tracks-list"></ul>
     </section>
     <section id="top-singers">
         <h2>Top Singers</h2>
+        <div class="time-range-buttons">
+            <button type="button" onclick="fetchTopSingers('short_term')">Last Week</button>
+            <button type="button" onclick="fetchTopSingers('medium_term')">Last Month</button>
+            <button type="button" onclick="fetchTopSingers('long_term')">Last Year</button>
+        </div>
         <ul id="singers-list"></ul>
     </section>
     <script src="app.js"></script>
 </body>
+
 </html>

@@ -63,9 +63,21 @@ To use the Spotify API, you need to create a Spotify Developer account and regis
 
 ## How to Run the Frontend
 
-1. Navigate to the `frontend` directory:
+1. Install a local web server (if not already installed):
+   ```bash
+   npm install -g http-server
+   ```
+
+2. Navigate to the frontend directory:
    ```bash
    cd frontend
    ```
 
-2. Open the `index.html` file in your browser to access the frontend application.
+3. Start the local server:
+   ```bash
+   http-server -p 3000
+   ```
+
+4. Open your browser and visit `http://localhost:3000`
+
+Note: Make sure both the FastAPI backend (on port 8000) and the frontend server (on port 3000) are running simultaneously.
