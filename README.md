@@ -6,8 +6,8 @@ This repository contains a FastAPI application that integrates with the Spotify 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/githubnext/workspace-blank.git
-   cd workspace-blank
+   git clone https://github.com/githubnext/spotify-api.git
+   cd spotify-api
    ```
 
 2. Create a virtual environment and activate it:
