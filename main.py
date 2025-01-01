@@ -4,7 +4,6 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
 from routers import auth, top, profile
-import os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -33,7 +32,7 @@ async def general_exception_handler(request: Request, exc: Exception):
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://ysntrkc.github.io", "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
